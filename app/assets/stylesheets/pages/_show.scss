@@ -1,0 +1,218 @@
+.id-card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+i{
+  color: #4D9CC5
+}
+
+
+.metric-red {
+  font-family: Montserrat;
+  letter-spacing: 1px;
+}
+
+#metrics {
+  p {
+    margin: 0;
+  }
+}
+
+.card-stats {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(245, 245, 245);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  width: 90%;
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+  &-marged {
+    margin-top: 100px;
+  }
+}
+
+#navigation{
+  padding-top: 20px;
+}
+
+.mini-box{
+  padding: 30px;
+  margin: 13px 0px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  color: #141414;
+  height: 165px;
+
+  .number{
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 400;
+  color: $gray-darker;
+  }
+
+  .account{
+
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 25px;
+    color: $gray-darker;
+   }
+
+  h4{
+    font-family: $header-font;
+    font-size: $base-size;
+  }
+  p{
+    text-align: center;
+  }
+  i{
+    font-size: 30px;
+    color: #4D9CC5;
+  }
+}
+
+.metrics{
+  margin-left: 10px;
+}
+.profile{
+
+  body{
+    font: $base-font;
+    font-weight: 200;
+    height: 300px;
+  }
+
+  .profile-picture{
+      height: 200px;
+      width: 200px;
+      border-radius: 13%;
+      padding: 15px;
+    }
+
+
+  &-name {
+    padding-bottom: 30px;
+    h3{
+      font-family: $header-font;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    h4{
+      font-family: Roboto;
+      font-weight: 300;
+    }
+  }
+
+  &-info{
+    text-align: left;
+    #screen-name{
+      font-family: $header-font;
+    }
+  }
+
+
+}
+.candidate-nav {
+  padding: 20px;
+}
+
+
+
+#talkbubble {
+  width: 100%;
+  height: 80px;
+  background: grey;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 70px;
+  z-index:1;
+  p{
+    font-family: raleway;
+    color: white;
+    padding: 7px;
+    z-index: 1;
+  }
+  }
+  #talkbubble:before {
+    content:"";
+    position: absolute;
+    bottom: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 33px solid transparent;
+    border-right: 51px solid grey;
+    border-bottom: 50px solid transparent;
+    z-index: -1;
+  }
+
+  .flexed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #birdy {
+    font-size: 125px;
+    margin: 50px 50px 0px 50px;
+  }
+
+@media screen and (min-width: 991px) and (max-width: 1438px) {
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-stats {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .flexed {
+    flex-direction: row-reverse;
+  }
+  #birdy {
+    margin-left: 0px;
+  }
+  #talkbubble:before {
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid grey;
+    border-bottom: 13px solid transparent;
+  }
+  // #talkbubble {
+  //   p{
+  //   font-size: 15px;
+  //   }
+  // }
+}
+
+#comparebtn{
+  margin-top: 12px;
+}
+
+#mention {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  color: $gray-darker;
+}

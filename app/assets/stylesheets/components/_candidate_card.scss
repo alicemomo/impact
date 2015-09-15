@@ -1,0 +1,44 @@
+.candidate-card{
+  position: relative;
+  background-size: cover;
+  margin: 0 auto 3em auto;
+  height: 25vh;
+  width: 25vh;
+  border-radius: 3px;
+  h4 {
+    padding-top: 1em;
+  }
+  &-shadow{
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    border-radius: 3px;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%);
+    text-shadow: none;
+    &:hover {
+      background-color: rgba(20,20,20,0.5);
+      color: rgb(240, 240, 240);
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .candidate-card {
+    height: 40vh;
+    width: 40vh;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .candidate-card {
+    height: 30vh;
+    width: 30vh;
+  }
+}

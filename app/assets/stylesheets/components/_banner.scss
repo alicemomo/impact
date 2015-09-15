@@ -1,0 +1,118 @@
+.banner {
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  h1 {
+    position: relative;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 6vh;
+    margin-bottom: 2vh;
+    z-index: 2;
+    text-shadow: 1px 1px 1px rgb(60,60,60);
+    text-transform : uppercase;
+    padding: 0 1em;
+  }
+  h2 {
+    position: relative;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 4vh;
+    padding-top: 10px;
+    margin-bottom: 4vh;
+    z-index: 2;
+    text-shadow: 0.5px 0.5px 0.5px rgb(60,60,60);
+  }
+  p {
+    font-size: 3vh  ;
+    line-height: 2;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgb(60,60,60);
+  }
+  &-shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(0deg, #68b0ab 10%, #247ba0 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(0deg, #68b0ab 10%, #247ba0 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(0deg, #68b0ab 10%, #247ba0 90%); /* IE10 */
+    background:      -o-linear-gradient(0deg, #68b0ab 10%, #247ba0 90%);
+    background:         linear-gradient(0deg, #68b0ab 10%, #247ba0 90%); /* Opera 11.10+ */
+    background-color: rgba(40,60,100,0.6);
+    z-index: 1;
+  }
+  &-content {
+    z-index: 2;
+    &-container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &-data {
+    color: white;
+    z-index: 2;
+    padding: 0.7em;
+    p {
+      font-size: 2vh;
+    }
+  }
+  &-icon {
+    margin-bottom: 3vh;
+    height: 10vh;
+  }
+  &-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    select {
+      height: 40px;
+      width: 25vw;
+      text-align: center;
+    }
+    input {
+      height: 40px;
+    }
+    &-marged {
+      margin: 5px 5px 0px 5px;
+      .form-group {
+        margin: 0;
+      }
+    }
+    &-direction {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.btn-danger {
+  margin-bottom: 2vh;
+}
+.cursor {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .banner-form select {
+    width: 50vw;
+  }
+}
